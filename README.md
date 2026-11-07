@@ -112,4 +112,4 @@ uvicorn main:app --reload
 - Seat holds that expire - book it, ten minutes to pay, then released
 - Auth; right now a booking just carries an email address
 - Confirmation emails handled off the request, through the job queue I built
-  separately: https://github.com/kannaworkspace-design/jobline
+  separately: https://github.com/kannaworkspace-design/Queue
