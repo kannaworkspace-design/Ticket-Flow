@@ -1,8 +1,11 @@
 from app.repositories import events as repo
+
 class NotFound(Exception):
     pass
 class BadSeatCount(Exception):
     pass
+
+
 async def create(pool, name, venue, starts_at, total_seats):
     if total_seats < 1 or total_seats > 1000:
         raise BadSeatCount()
